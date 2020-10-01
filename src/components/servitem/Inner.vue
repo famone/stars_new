@@ -2,7 +2,8 @@
 	<section id="servinner">
 		<img src="../../assets/img/cube-copy.png" alt="" class="servcube">
 		<div class="container">
-			<div class="col-lg-4 text-center">
+			<div class="row">
+				<div class="col-lg-4 text-center">
 				<img :src="server.imgBig" class="singlecase-img">
 			</div>
 			<div class="col-lg-8">
@@ -13,6 +14,7 @@
 				<div class="results">
 					<p class="grey-txt" v-for="item in server.whatDo">• {{item}}</p>
 				</div>
+			</div>
 			</div>
 		</div>
 	</section>
