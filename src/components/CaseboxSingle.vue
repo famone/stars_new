@@ -1,7 +1,6 @@
 <template>
 		<div class="col-lg-6 col-sm-6" 
 	v-if="caseItem.servs.includes(filteredParam.title) ||  filteredParam.title === 'all' ">
-		
 		<div class="case-box">
 			<div class="img-box">
 

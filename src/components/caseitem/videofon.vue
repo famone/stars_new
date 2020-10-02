@@ -1,5 +1,5 @@
 <template>
-	<div class="videfon">
+	<div class="videfon" :style="{'background-image': 'url(' + caser.bigPhoto + ')'}">
             
     		<!-- <video autoplay muted loop id="myVideo">
                 <source :src="caser.video" type="video/mp4">

@@ -1,6 +1,6 @@
 <template>
 	<section id="main">
-		<img src="../assets/img/3d.png" class="d3img wow fadeInUp" data-wow-delay="1s" 
+		<img src="../assets/img/3d.svg" class="d3img wow fadeInUp" data-wow-delay="1s" 
 		:class="{ac3d: menuOpened}">
 		<div class="container">
 			<div class="subtitle">

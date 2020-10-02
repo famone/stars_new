@@ -2,7 +2,7 @@
 	<section id="slider" :class="{ptop0: this.$route.path === '/services'}">
 		<div class="container">
 			<swiper ref="mySwiper" :options="swiperOptions" class="slider">
-				<swiper-slide v-for="serv in services" class="text-center">		
+				<swiper-slide v-for="serv in newServ" class="text-center">		
 					<div class="serv-box text-center">
 						<img :src="serv.img" >
 						<h4>{{serv.title}}</h4>
@@ -10,6 +10,7 @@
 						<router-link tag="a" :to="'/services/' + serv.id" >
 							<button class="stars-btn">See examples</button>
 						</router-link>
+						
 					</div>
 
 				</swiper-slide>
@@ -46,7 +47,8 @@ import {mapState} from 'vuex'
 			      draggable: true,
 			      breakpoints: {
 			        320: {
-			          slidesPerView: 1
+			          slidesPerView: 1.3,
+			          centeredSlides: false
 			        },
 			        768: {
 			          slidesPerView: 2
@@ -73,7 +75,8 @@ import {mapState} from 'vuex'
 			swiper(){
 	       		return this.$refs.mySwiper.$swiper
 	    	},
-	    	...mapState('goods', ['services']),
+	    	...mapState('goods', ['newServ'])
+
 		}
 	}
 </script>

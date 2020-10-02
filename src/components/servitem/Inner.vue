@@ -12,7 +12,8 @@
 				<hr>
 				<h4>What we do:</h4>
 				<div class="results">
-					<p class="grey-txt" v-for="item in server.whatDo">• {{item}}</p>
+					<p class="grey-txt" v-for="item in server.whatDo"><img src="../../assets/img/checker.svg" 
+						class="checker"> {{item}}</p>
 				</div>
 			</div>
 			</div>

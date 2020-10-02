@@ -9,7 +9,7 @@
 				</div>
 
 				<div class="row">
-					<CaseboxSingle v-for="caseItem in cases" :caseItem="caseItem" :filters="filters" />
+					<CaseboxSingle v-for="caseItem in newCases" :caseItem="caseItem" :filters="filters" />
 				</div>
 
 				<div class="row">
@@ -42,13 +42,13 @@ export default{
 		}
 	},
 	computed: {
-		...mapState('goods', ['cases', 'filters']),
+		...mapState('goods', ['newCases', 'filters']),
 		filteredParam(){
 			return this.filters.find(item => item.active == true)
 		},
 		nomoreItems(){
 			var ishod = this.filteredParam.title
-			return this.cases.find(item => item.servs.includes(ishod))
+			return this.newCases.find(item => item.servs.includes(ishod))
 		/*	return ishod*/
 		},
 		noCasesYet(){

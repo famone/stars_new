@@ -5,6 +5,7 @@ import About from './pages/About.vue'
 import Services from './pages/Services.vue'
 import SingleCase from './pages/SingleCase.vue'
 import SingleServ from './pages/SingleServ.vue'
+import Contacts from './pages/Contacts.vue'
 
 export default new VueRouter({
 	routes: [
@@ -27,8 +28,11 @@ export default new VueRouter({
 		{
 			path: '/about',
 			component: About
-		}
-		,
+		},
+		{
+			path: '/contacts',
+			component: Contacts
+		},
 		{
 			path: '/services',
 			component: Services

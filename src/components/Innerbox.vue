@@ -12,6 +12,10 @@
 			  <div class="subtitle wow fadeInUp" v-if="this.$route.path === '/about'" >
 					<span><span class="bl-txt">We are</span> Stars </span>
 			    </div>
+			    <div class="contacts" v-if="this.$route.path === '/contacts'">
+			    	<a href="tel:+420776685999"><h4>+420 776 685 999</h4></a>
+			    	<a href="mailto:karapet@stars-ent.com"><h4>karapet@stars-ent.com</h4></a>
+			    </div>
 			</div>
 		</div>
 	</section>

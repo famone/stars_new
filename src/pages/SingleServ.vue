@@ -26,7 +26,7 @@ export default{
 
 
 		// скрипт для переключения фильтра на активной странице
-		this.$store.dispatch('goods/changeFilter', this.itemSlug)	
+		// this.$store.dispatch('goods/changeFilter', this.itemSlug)	
 	}
 }
 </script>

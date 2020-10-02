@@ -7,7 +7,7 @@
     	<videofon :caser="getCases(getSlug)" />
 
     	<Overview :caser="getCases(getSlug)" />
-
+ 
     	<Result :caser="getCases(getSlug)" />
 
     	<Galery :caser="getCases(getSlug)" />

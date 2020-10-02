@@ -5,7 +5,7 @@
 				<h4>Overview</h4>
 			</div>
 			<div class="col-lg-8">
-				<p class="grey-txt">{{caser.overview}}</p>
+				<p class="grey-txt" v-html="caser.overview"></p>
 			</div>
 			<div class="col-lg-12">
 				<img :src="caser.bigPhoto" class="w-100">

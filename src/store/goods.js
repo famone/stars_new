@@ -64,15 +64,15 @@ const goods = {
 						active: false
 					},
 					{
-						title: 'marketing',
+						title: 'Marketing',
 						active: false
 					},
 					{
-						title: 'video production',
+						title: 'Video making',
 						active: false
 					},
 					{
-						title: 'live streaming',
+						title: 'Live streaming',
 						active: false
 					},
 					{
@@ -127,6 +127,8 @@ const goods = {
 						imgBig: require('../assets/img/serv5big.png')
 					},
 				],
+				newServ: [],
+				newCases: []
   	},
   	mutations: {
   	OPEN_MENU(state){
@@ -142,8 +144,11 @@ const goods = {
   		state.preload = !state.preload
   	},
   	SET_CASES(state, payload){
-  		state.cases = payload
-  	}
+  		state.newCases = payload
+  	},
+  	SET_SERV(state, payload){
+  		state.newServ = payload
+  	},
   },
 	actions: {
 		openMenu({commit}){
@@ -155,21 +160,29 @@ const goods = {
 		doPreload({commit}){
 			commit('DO_PRELOAD')
 		},
+		loadServices({commit}){
+			axios
+			.get('https://stars-media.cz/wp-json/stars/v1/get/services')
+			.then(response =>{
+				 commit('SET_SERV', response.data)
+				console.log(response.data)
+			})
+		},
 		loadCases({commit}){
 			axios
 			.get('https://stars-media.cz/wp-json/stars/v1/get/cases')
 			.then(response =>{
-				commit('SET_CASES', response.data)
+				 commit('SET_CASES', response.data)
 				console.log(response.data)
 			})
 		}
 	},
 	getters: {
   		getCases: (state) => (id) => {
-  			return state.cases.find(item => item.id == id)
+  			return state.newCases.find(item => item.id == id)
   		},
   		getService: (state) => (id) => {
-  			return state.services.find(item => item.id == id)
+  			return state.newServ.find(item => item.id == id)
   		}
 	}
 }

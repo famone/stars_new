@@ -183,15 +183,16 @@ header{
 
 .d3img{
 	position: absolute;
-	top: 122px;
-	left: 30%;
-	height: 800px;
+	top: 325px;
+	left: 50%;
+	height: 480px;
 	animation-delay: 2s; 
 	transition: all .8s ease-in-out;
 	z-index: 60;
 }
 .ac3d{
-	left: -35%;
+
+	left: -20%;
 	position: fixed;
 }
 
@@ -243,7 +244,7 @@ header{
 	overflow: hidden;
 }
 #main:before{
-	width: 35%;
+	width: 38%;
 	content: '';
 	height: 660px;
 	background-color: #1B1B87;
@@ -265,7 +266,7 @@ header{
 		height: 660px;
 	}
 	100%{
-		width: 35%;
+		width: 38%;
 		height: 660px;
 	}
 }
@@ -966,6 +967,7 @@ form .stars-btn{
 	background-position: bottom center;
 	background-size: 100%;
 	background-repeat: no-repeat;
+	padding-bottom: 30px;
 }
 footer{
 	padding: 160px 0 110px 0;
@@ -1048,7 +1050,7 @@ h6{
 	margin-top: 100px;
 }
 .w-50{
-	width: 100%;
+	width: 100%!important;
 	border-radius: 16px;
 	margin-bottom: 30px;
 	background-image: url(../img/kingsbig.jpg);
@@ -1146,7 +1148,25 @@ h6{
 	height: 613px;
 	margin-bottom: 20px;
 }
+.checker{
+	height: 18px;
+	margin-right: 5px;
+}
 
+
+
+/*contacts*/
+
+.contacts h4{
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 64px;
+	color: #111029;
+	transition:all .3s ease-in-out;
+}
+.contacts h4:hover{
+	color: #4C40F7;
+}
 
 
 /*ADAPTIIIIIIIIIV*/
@@ -1173,6 +1193,9 @@ h6{
 	.circle-icon:before{
 		display: none;
 	}
+	.ac3d{
+		left: -50%;
+	}
 }
 @media (max-width: 767px) {
  
@@ -1181,6 +1204,13 @@ h6{
 	
 }
 @media (max-width: 512px) {
+	.contacts h4{
+		font-size: 20px;
+		line-height: 35px;
+	}
+	.serv-box{
+		padding: 34px 15px 34px 15px ;
+	}
 	.singlecase-img{
 		width: 60%;
 		height: inherit;
@@ -1205,12 +1235,13 @@ h6{
 	}
 	.cube{
 		width: 100%;
-		left: 0;bottom: -10%;
+		left: 0;
+		bottom: -135px;
 	}
 	.d3img {
-    	top: 23%;
-    	left: -37%;
-    	height: 654px;
+    	top: 400px;
+    	left: 50%;
+    	height: 300px;
 	}	
 	@keyframes blockIn{
 	0%{
