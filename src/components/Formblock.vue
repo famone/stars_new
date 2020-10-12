@@ -19,16 +19,18 @@
 							<img src="../assets/img/tel.svg" alt="">
 							<a href="tel:+420776685999">+420 776 685 999</a>
 						</div>
-						<img src="../assets/img/cube-copy.png" class="w-100">
+						<img src="../assets/img/cube-copy.png" class="w-100 hidden-xs hidden-sm">
 					</div>
 					<div class="col-lg-6">
 						<form action="">
 							<input type="text" placeholder="Name" id="name">
 							<input type="text" placeholder="E-mail" id="mail">
 							<select name="" id="">
-								<option value="" disabled selected>What service are you looking for?</option>
-								<option value="1">What service are you looking for?</option>
-								<option value="2">What service are you looking for?</option>
+								<option value="Live stream production">Live stream production</option>
+								<option value="Video production">Video production</option>
+								<option value="Graphical design">Graphical design</option>
+								<option value="Perfomance marketing">Perfomance marketing</option>
+								<option value="Website creation">Website creation</option>
 							</select>
 							<textarea id="" cols="30" rows="10" placeholder="Message"></textarea>
 							<button class="stars-btn">Let’s Talk<img src="../assets/img/arr.svg" alt=""></button>

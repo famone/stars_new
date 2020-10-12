@@ -11,7 +11,7 @@
 				<h1>{{caser.title}}</h1>
 				<h5 class="under-title" v-for="serv in caser.servs" >#{{serv}}</h5>
 			</div>
-			<div class="col-lg-4 col-lg-offset-2">
+			<div class="col-lg-4 col-lg-offset-2 result-outliner">
 				<h6>Main task:</h6>
 				<p class="grey-txt" v-for="task in caser.mainTask">{{task}}</p>
 			</div>

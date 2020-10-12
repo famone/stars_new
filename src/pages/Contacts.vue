@@ -1,6 +1,6 @@
 <template>
 	<div class="lines-first">
-		<Innerbox :title="innerTitle"/>
+		<!-- <Innerbox :title="innerTitle"/> -->
 	</div>
 </template>
 

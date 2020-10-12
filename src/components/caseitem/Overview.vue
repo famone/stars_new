@@ -2,7 +2,7 @@
 	<section id="overview">
 		<div class="container">
 			<div class="col-lg-4">
-				<h4>Overview</h4>
+				<h2>Overview</h2>
 			</div>
 			<div class="col-lg-8">
 				<p class="grey-txt" v-html="caser.overview"></p>

@@ -1,20 +1,20 @@
 <template>
 	<header :class="{fixedHeader: menuActive}">
 		<div class="container">
-			<div class="shapka" :class="{darkHeader: this.$route.path === '/cases' || this.$route.path === '/'}">
+			<div class="shapka" :class="{darkHeader: this.$route.path === '/cases' || this.$route.path === '/about'  || this.$route.path === '/'}">
 				<div class="nav-elements">
 					<router-link tag="div" to="/" class="logo" @click="openMenu()">
-						<img src="../assets/img/logoW.svg" v-if="this.$route.path === '/cases' || menuActive">
+						<img src="../assets/img/logoW.svg" v-if="this.$route.path === '/cases' || this.$route.path === '/about' || menuActive">
 						<img src="../assets/img/logo.svg" v-else>
 					</router-link>
-					<div class="social hidden-xs" :class="{darkicons: this.$route.path === '/cases'}" >
+					<div class="social hidden-xs" :class="{darkicons: this.$route.path === '/cases' || this.$route.path === '/about' }" >
 						<a href="">
-							<img src="../assets/img/youtube_w.svg" v-if="this.$route.path === '/cases'">
+							<img src="../assets/img/youtube_w.svg" v-if="this.$route.path === '/cases' || this.$route.path === '/about' ">
 							<img src="../assets/img/youtube.svg" v-else>
 							Youtube
 						</a>
 						<a href="">
-							<img src="../assets/img/inst_w.svg" v-if="this.$route.path === '/cases'">
+							<img src="../assets/img/inst_w.svg" v-if="this.$route.path === '/cases' || this.$route.path === '/about' ">
 							<img src="../assets/img/inst.svg" v-else>
 							Instagram
 						</a>
@@ -24,7 +24,7 @@
 				<div class="menu-btn" @click="openMenu()" :class="{acMenu: menuActive}">
 					<span></span>
 
-<p class="tapOpen hidden-xs hidden-sm" v-if="this.$route.path === '/cases' || this.$route.path === '/'" >Tap to open menu <img src="../assets/img/arr.svg"></p>
+<p class="tapOpen hidden-xs hidden-sm" v-if="this.$route.path === '/cases' || this.$route.path === '/about'  || this.$route.path === '/'" >Tap to open menu <img src="../assets/img/arr.svg"></p>
 <p class="tapOpen hidden-xs hidden-sm" 
 style="color: #000;" v-else>Tap to open menu 
 <img 

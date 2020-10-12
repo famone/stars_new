@@ -6,7 +6,7 @@
 				<p class="white-txt" v-for="res in caser.results" >{{res}}</p>
 			</div>
 		</div>
-		<img src="../../assets/img/cube-copy.png" class="cube2 hidden-xs hidden-sm">
+		<img src="../../assets/img/maincube.svg" class="cube2 hidden-xs hidden-sm">
 	</section>
 </template>
 

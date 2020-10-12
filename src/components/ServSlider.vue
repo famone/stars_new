@@ -1,7 +1,11 @@
 <template>
 	<section id="slider" :class="{ptop0: this.$route.path === '/services'}">
 		<div class="container">
-			<swiper ref="mySwiper" :options="swiperOptions" class="slider">
+			<div class="row" v-if="this.$route.path === '/'">
+				<h2 class="wow fadeInUp">Services</h2>
+			</div>
+			<div class="row">
+				<swiper ref="mySwiper" :options="swiperOptions" class="slider">
 				<swiper-slide v-for="serv in newServ" class="text-center">		
 					<div class="serv-box text-center">
 						<img :src="serv.img" >
@@ -15,6 +19,7 @@
 
 				</swiper-slide>
 	  					</swiper>
+			</div>
 
 	  			<div class="slider-bottom">
 	  				<div class="swiper-pagination"></div>
@@ -22,9 +27,9 @@
 	  					<div class="prevBtn" slot="button-prev"></div>	
 	  					<div class="nextBtn" slot="button-next"></div>
 					</div>
-					<div v-if="this.$route.path !== '/services'">
-						<router-link tag="a" to="/services" class="vio-link hidden-xs">
-							Show all services 
+					<div v-if="this.$route.path !== '/services'" class="hidden-xs">
+						<router-link tag="a" to="/services">
+							<button class="stars-btn">Show all services <img src="../assets/img/arr.svg" alt=""></button>
 						</router-link>
 					</div>
 					
