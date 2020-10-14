@@ -1,6 +1,6 @@
 <template>
 	<section id="servinner">
-		<img src="../../assets/img/cube-copy.png" alt="" class="servcube">
+		<img src="../../assets/img/maincube.svg" alt="" class="servcube">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 text-center">

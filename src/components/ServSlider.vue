@@ -5,8 +5,8 @@
 				<h2 class="wow fadeInUp">Services</h2>
 			</div>
 			<div class="row">
-				<swiper ref="mySwiper" :options="swiperOptions" class="slider">
-				<swiper-slide v-for="serv in newServ" class="text-center">		
+				<swiper ref="mySwiper" :options="swiperOptions" class="slider" v-if="servSlides !== '' ">
+				<swiper-slide v-for="(serv, index) in servSlides" :key="index" class="text-center">		
 					<div class="serv-box text-center">
 						<img :src="serv.img" >
 						<h4>{{serv.title}}</h4>
@@ -41,11 +41,13 @@
 
 <script>
 import {mapState} from 'vuex'
+import axios from 'axios'
 
 	export default{
 		data(){
 			return{
 				numsl: '',
+				servSlides: '',
 				swiperOptions: {
 			      spaceBetween: 0,
 			      centeredSlides: true,
@@ -81,7 +83,14 @@ import {mapState} from 'vuex'
 	       		return this.$refs.mySwiper.$swiper
 	    	},
 	    	...mapState('goods', ['newServ'])
-
+		},
+		created(){
+			axios
+			.get('https://stars-media.cz/wp-json/stars/v1/get/services')
+			.then(response =>{
+				console.log(response.data)
+				this.servSlides = response.data
+			})
 		}
 	}
 </script>
