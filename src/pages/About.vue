@@ -7,7 +7,7 @@
 
 		<Team />
 
-		<CasesSection :caseTitle=" 'Our works' " />
+		<CasesSection :caseTitle=" 'Our cases' " />
 
 
 	</div>

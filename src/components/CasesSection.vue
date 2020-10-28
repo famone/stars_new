@@ -4,7 +4,7 @@
 				<div class="row">
 					<div class="col-lg-12 wow fadeInUp">
 						<h2>{{caseTitle}}</h2>
-						<Filtercase :filters="filters" />
+						<!-- <Filtercase :filters="filters" /> -->
 					</div>
 				</div>
 

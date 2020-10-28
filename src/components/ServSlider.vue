@@ -1,10 +1,10 @@
 <template>
 	<section id="slider" :class="{ptop0: this.$route.path === '/services'}">
 		<div class="container">
-			<div class="row" v-if="this.$route.path === '/'">
+			<div class="rowd" v-if="this.$route.path === '/'">
 				<h2 class="wow fadeInUp">Services</h2>
 			</div>
-			<div class="row">
+			<div class="rowd">
 				<swiper ref="mySwiper" :options="swiperOptions" class="slider" v-if="servSlides !== '' ">
 				<swiper-slide v-for="(serv, index) in servSlides" :key="index" class="text-center">		
 					<div class="serv-box text-center">
@@ -91,6 +91,7 @@ import axios from 'axios'
 				console.log(response.data)
 				this.servSlides = response.data
 			})
+
 		}
 	}
 </script>
