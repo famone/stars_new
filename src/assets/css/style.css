@@ -1303,7 +1303,13 @@ h6{
 }
 
 
+.casesPage #cases{
+	padding: 150px 0 180px 0;
+}
 
+.worksPage #works{
+	padding: 150px 0 ;
+}
 
 
 #videoPresa{

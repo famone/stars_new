@@ -6,6 +6,7 @@ import Services from './pages/Services.vue'
 import SingleCase from './pages/SingleCase.vue'
 import SingleServ from './pages/SingleServ.vue'
 import Contacts from './pages/Contacts.vue'
+import Works from './pages/Works.vue'
 
 export default new VueRouter({
 	routes: [
@@ -16,6 +17,10 @@ export default new VueRouter({
 		{
 			path: '/cases',
 			component: Cases
+		},
+		{
+			path: '/works',
+			component: Works
 		},
 		{
 			path: '/cases/:id',

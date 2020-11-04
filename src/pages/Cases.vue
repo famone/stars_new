@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="casesPage">
 		<CasesSection :caseTitle=" 'Cases' " />
 	</div>
 </template>
@@ -11,3 +11,5 @@ export default{
 	components: {CasesSection}
 }
 </script>
+
+

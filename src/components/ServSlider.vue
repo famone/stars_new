@@ -2,9 +2,16 @@
 	<section id="slider" :class="{ptop0: this.$route.path === '/services'}">
 		<div class="container">
 			<div class="rowd" v-if="this.$route.path === '/'">
-				<h2 class="wow fadeInUp">Services</h2>
+				<h2 class="wow text-center fadeInUp">Services</h2>
 			</div>
-			<div class="rowd">
+			<div class="rowd rowd-relative">
+
+				<div class="navigation nav-100 hidden-xs hidden-sm">
+	  					<div class="prevBtn" slot="button-prev"></div>	
+	  					<div class="nextBtn" slot="button-next"></div>
+					</div>
+
+
 				<swiper ref="mySwiper" :options="swiperOptions" class="slider" v-if="servSlides !== '' ">
 				<swiper-slide v-for="(serv, index) in servSlides" :key="index" class="text-center">		
 					<div class="serv-box text-center">
@@ -23,7 +30,7 @@
 
 	  			<div class="slider-bottom">
 	  				<div class="swiper-pagination"></div>
-	  				<div class="navigation">
+	  				<div class="navigation hidden-lg hidden-md">
 	  					<div class="prevBtn" slot="button-prev"></div>	
 	  					<div class="nextBtn" slot="button-next"></div>
 					</div>
@@ -51,17 +58,19 @@ import axios from 'axios'
 				swiperOptions: {
 			      spaceBetween: 0,
 			      centeredSlides: true,
-			      draggable: true,
 			      breakpoints: {
 			        320: {
 			          slidesPerView: 1.3,
-			          centeredSlides: false
+			          centeredSlides: false,
+			           touchRatio: 1
 			        },
 			        768: {
-			          slidesPerView: 2
+			          slidesPerView: 2,
+			           touchRatio: 1
 			        },
 			        1150: {
-			          slidesPerView: 3
+			          slidesPerView: 3,
+			           touchRatio: 0
 			        }
 			      },
 			      loop: true,
@@ -95,3 +104,17 @@ import axios from 'axios'
 		}
 	}
 </script>
+
+<style>
+	.rowd-relative{
+		position: relative;
+	}
+	.nav-100{
+		justify-content: space-between;
+		position: absolute;
+		top: calc(50% - 15px);
+		left: -3%;
+		width: 106%;
+		z-index: 20;
+	}
+</style>

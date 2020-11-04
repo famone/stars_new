@@ -30,28 +30,19 @@ import popwork from '../components/popwork.vue'
 						name: 'Spanish Poker Festival',
 						img: require('../assets/img/work1.jpg'),
 						categoriy: 'Live streaming',
-						images: [
-						'https://uc3afdf77603fab8c862554679fc.previews.dropboxusercontent.com/p/thumb/AA8kMttqdc3-e0H6QiXjYCY_wYUV097OqnHSLKh_lnT4niJQqZCxEOW7DMTdTNiSm-IH_2xwbWL2plbU7uU_7keiTB9HkrKmsOSdHFx94U9GKbPXrgIXrq7zSDC-zn1ltq8eA7zuUHU4KckBkrIda84c-YWpFfZF4yDT6TjWF6Kxw7eUNAViKpsE_jc4zCJK_2hTjlWGK8CzJVrhnbQgPpPkGGl1kL-sXU70qqi79vVyQVjZ01uw44VCRHIz8G5SaNBpG3BQ4xHrmpdJIPUGlRjVbeKriIZdsKwAFqS9uQUzARD1hHLZ9eMuVO25GpRqOXSGWYw2PLA5vtu6XZJpLSJJ8yfx0gmga_cUOfIUyi1iaw/p.jpeg?fv_content=true&size_mode=5',
-					'https://uceda09d3d34a51a48e6dd67fdd3.previews.dropboxusercontent.com/p/thumb/AA-Bmo5kyadYsKd1PDU2zTEjSNcuHhtKbF0v---4xF_oyxUKxPNTB0uv7HB-AFdhzyKeMNmggfWulVTa1eoT3qRoExoQxxSETw7BQPfTvZwoZhYOfey5vG2hG3xtyoHnxXWMden8LL-4z60QbDWzbv8kzHXc7mORt6xkvjUEopBwkuRYtGBp9xFC4jAFtIthlEQQVSXw_86Rd1kD0Xts5os6a071N7Ly2CgosjNl_DxM8tfKyhRrWR_HjBPWcPv-xHoUVNoybRETssvk-Ld3kZ25kY4SJRpuOA_s1W3ww12Y7iDx6VS1-4lVr765VZGZBqyYG4SMyo-i6a2IlOxMK1Q9091LDYldP3BMXmodT9l55g/p.jpeg?fv_content=true&size_mode=5',
-				],
+						images: [require('../assets/img/work1.jpg'), require('../assets/img/work1.jpg')],
 					},
 					{
 						name: 'Spanish Poker Festival',
 						img: require('../assets/img/work1.jpg'),
-						categoriy: 'Marketing',
-						images: [
-						'https://uc3afdf77603fab8c862554679fc.previews.dropboxusercontent.com/p/thumb/AA8kMttqdc3-e0H6QiXjYCY_wYUV097OqnHSLKh_lnT4niJQqZCxEOW7DMTdTNiSm-IH_2xwbWL2plbU7uU_7keiTB9HkrKmsOSdHFx94U9GKbPXrgIXrq7zSDC-zn1ltq8eA7zuUHU4KckBkrIda84c-YWpFfZF4yDT6TjWF6Kxw7eUNAViKpsE_jc4zCJK_2hTjlWGK8CzJVrhnbQgPpPkGGl1kL-sXU70qqi79vVyQVjZ01uw44VCRHIz8G5SaNBpG3BQ4xHrmpdJIPUGlRjVbeKriIZdsKwAFqS9uQUzARD1hHLZ9eMuVO25GpRqOXSGWYw2PLA5vtu6XZJpLSJJ8yfx0gmga_cUOfIUyi1iaw/p.jpeg?fv_content=true&size_mode=5',
-					'https://uceda09d3d34a51a48e6dd67fdd3.previews.dropboxusercontent.com/p/thumb/AA-Bmo5kyadYsKd1PDU2zTEjSNcuHhtKbF0v---4xF_oyxUKxPNTB0uv7HB-AFdhzyKeMNmggfWulVTa1eoT3qRoExoQxxSETw7BQPfTvZwoZhYOfey5vG2hG3xtyoHnxXWMden8LL-4z60QbDWzbv8kzHXc7mORt6xkvjUEopBwkuRYtGBp9xFC4jAFtIthlEQQVSXw_86Rd1kD0Xts5os6a071N7Ly2CgosjNl_DxM8tfKyhRrWR_HjBPWcPv-xHoUVNoybRETssvk-Ld3kZ25kY4SJRpuOA_s1W3ww12Y7iDx6VS1-4lVr765VZGZBqyYG4SMyo-i6a2IlOxMK1Q9091LDYldP3BMXmodT9l55g/p.jpeg?fv_content=true&size_mode=5',
-				],
+						categoriy: 'Live streaming',
+						images: [require('../assets/img/work1.jpg'), require('../assets/img/work1.jpg')],
 					},
 					{
 						name: 'Spanish Poker Festival',
 						img: require('../assets/img/work1.jpg'),
-						categoriy: 'Video making',
-						images: [
-						'https://uc3afdf77603fab8c862554679fc.previews.dropboxusercontent.com/p/thumb/AA8kMttqdc3-e0H6QiXjYCY_wYUV097OqnHSLKh_lnT4niJQqZCxEOW7DMTdTNiSm-IH_2xwbWL2plbU7uU_7keiTB9HkrKmsOSdHFx94U9GKbPXrgIXrq7zSDC-zn1ltq8eA7zuUHU4KckBkrIda84c-YWpFfZF4yDT6TjWF6Kxw7eUNAViKpsE_jc4zCJK_2hTjlWGK8CzJVrhnbQgPpPkGGl1kL-sXU70qqi79vVyQVjZ01uw44VCRHIz8G5SaNBpG3BQ4xHrmpdJIPUGlRjVbeKriIZdsKwAFqS9uQUzARD1hHLZ9eMuVO25GpRqOXSGWYw2PLA5vtu6XZJpLSJJ8yfx0gmga_cUOfIUyi1iaw/p.jpeg?fv_content=true&size_mode=5',
-					'https://uceda09d3d34a51a48e6dd67fdd3.previews.dropboxusercontent.com/p/thumb/AA-Bmo5kyadYsKd1PDU2zTEjSNcuHhtKbF0v---4xF_oyxUKxPNTB0uv7HB-AFdhzyKeMNmggfWulVTa1eoT3qRoExoQxxSETw7BQPfTvZwoZhYOfey5vG2hG3xtyoHnxXWMden8LL-4z60QbDWzbv8kzHXc7mORt6xkvjUEopBwkuRYtGBp9xFC4jAFtIthlEQQVSXw_86Rd1kD0Xts5os6a071N7Ly2CgosjNl_DxM8tfKyhRrWR_HjBPWcPv-xHoUVNoybRETssvk-Ld3kZ25kY4SJRpuOA_s1W3ww12Y7iDx6VS1-4lVr765VZGZBqyYG4SMyo-i6a2IlOxMK1Q9091LDYldP3BMXmodT9l55g/p.jpeg?fv_content=true&size_mode=5',
-				],
+						categoriy: 'Live streaming',
+						images: [require('../assets/img/work1.jpg'), require('../assets/img/work1.jpg')],
 					},
 				]
 			}

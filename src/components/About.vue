@@ -7,16 +7,15 @@
 					</div>
 					<span>About</span>
 			    </div>
-			   <h2 class="big-txt wow fadeInUp">
-			    	We are Stars
-			    </h2>
 			    
 			</div>
 			<div class="col-lg-6">
 				<iframe id="videoPresa" class="wow fadeInUp" src="https://player.vimeo.com/video/81699069?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 			</div>
 			<div class="col-lg-6">
-				
+				<h2 class=" fadeInUp" style="color: #111029;margin-bottom: 30px;line-height: 90%;">
+			    	We are Stars
+			    </h2>
 
 			    <p class="black-txt">
 			    	We are a young team of passionate marketers & creators placing your needs at the center of all our work. <br><br>

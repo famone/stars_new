@@ -41,6 +41,10 @@
 					link: '/services'
 				},
 				{
+					name: 'Our works',
+					link: '/works'
+				},
+				{
 					name: 'Cases',
 					link: '/cases'
 				},
