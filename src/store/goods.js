@@ -128,7 +128,8 @@ const goods = {
 					},
 				],
 				newServ: [],
-				newCases: []
+				newCases: [],
+				works: []
   	},
   	mutations: {
   	OPEN_MENU(state){
@@ -149,6 +150,9 @@ const goods = {
   	SET_SERV(state, payload){
   		state.newServ = payload
   	},
+  	SET_WORKS(state, payload){
+  		state.works = payload
+  	}
   },
 	actions: {
 		openMenu({commit}){
@@ -165,7 +169,7 @@ const goods = {
 			.get('https://stars-media.cz/wp-json/stars/v1/get/services')
 			.then(response =>{
 				 commit('SET_SERV', response.data)
-				console.log(response.data)
+				// console.log(response.data)
 			})
 		},
 		loadCases({commit}){
@@ -173,7 +177,15 @@ const goods = {
 			.get('https://stars-media.cz/wp-json/stars/v1/get/cases')
 			.then(response =>{
 				 commit('SET_CASES', response.data)
-				console.log(response.data)
+				// console.log(response.data)
+			})
+		},
+		loadWorks({commit}){
+			axios
+			.get('https://stars-media.cz/wp-json/stars/v1/get/works')
+			.then(response =>{
+				console.log(response)
+				commit('SET_WORKS', response.data)
 			})
 		}
 	},
@@ -183,6 +195,9 @@ const goods = {
   		},
   		getService: (state) => (id) => {
   			return state.newServ.find(item => item.id == id)
+  		},
+  		getWorks(state){
+  			return state.works
   		}
 	}
 }
