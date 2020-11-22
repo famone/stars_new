@@ -177,14 +177,13 @@ const goods = {
 			.get('https://stars-media.cz/wp-json/stars/v1/get/cases')
 			.then(response =>{
 				 commit('SET_CASES', response.data)
-				// console.log(response.data)
+				console.log(response.data)
 			})
 		},
 		loadWorks({commit}){
 			axios
 			.get('https://stars-media.cz/wp-json/stars/v1/get/works')
 			.then(response =>{
-				console.log(response)
 				commit('SET_WORKS', response.data)
 			})
 		}

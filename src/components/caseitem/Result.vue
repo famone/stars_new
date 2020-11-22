@@ -1,5 +1,5 @@
 <template>
-	<section id="result">
+	<section id="result" :style="{'background-image': 'url(' + caser.Resultbg + ')'}">
 		<div class="container">
 			<h2>Results:</h2>
 			<div class="results">
@@ -9,6 +9,7 @@
 		<img src="../../assets/img/maincube.svg" class="cube2 hidden-xs hidden-sm">
 	</section>
 </template>
+
 
 <script>
 	export default{

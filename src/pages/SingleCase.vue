@@ -1,7 +1,6 @@
 <template>
 	<div>
 
-
 		<Inner :caser="getCases(getSlug)" />
 
     	<videofon :caser="getCases(getSlug)" />
