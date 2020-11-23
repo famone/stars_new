@@ -4,9 +4,9 @@
 			<div class="shapka" 
 			:class="{darkHeader: this.$route.path === '/cases' || this.$route.path === '/about' || this.$route.path === '/works' || this.$route.path === '/'}">
 				<div class="nav-elements">
-					<router-link tag="div" to="/" class="logo" @click="openMenu()">
+					<router-link tag="div" to="/" class="logo" @click="openMenu()" :class="{hiddenXs: menuActive}">
 						<img src="../assets/img/logoW.svg" v-if="this.$route.path === '/cases' || this.$route.path === '/about' || this.$route.path === '/works' || menuActive">
-						<img src="../assets/img/logo.svg" v-else>
+						<img src="../assets/img/logo.svg" v-else >
 					</router-link>
 					<div class="social hidden-xs" :class="{darkicons: this.$route.path === '/cases' || this.$route.path === '/about' || this.$route.path === '/works' }" >
 						<a href="">

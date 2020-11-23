@@ -1523,6 +1523,15 @@ h6{
 	.social a{
 		margin-bottom: 20px;
 	}
+	#about{
+		background-position: left -8%;
+	}
+	#about2{
+		background-position: right 28%;
+	}
+	.hiddenXs{
+		display: none;
+	}
 }
 
 @media (max-width: 390px) {
