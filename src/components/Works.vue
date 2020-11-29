@@ -3,7 +3,7 @@
 		<popwork v-if="popup" @closePop="closePop" :popImages="popImages"  />
 		<div class="container">
 			<div class="col-lg-12 text-center">
-				<h2>Our works</h2>
+				<h2>Our work</h2>
 			</div>
 
 			<div class="col-lg-4" v-for="(work, index) in works">

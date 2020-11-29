@@ -186,6 +186,13 @@ const goods = {
 			.then(response =>{
 				commit('SET_WORKS', response.data)
 			})
+		},
+		loadTeam({commit}){
+			axios
+			.get('https://stars-media.cz/wp-json/stars/v1/get/team')
+			.then(response =>{
+				console.log(response.data)
+			})
 		}
 	},
 	getters: {

@@ -31,7 +31,8 @@ export default {
    created() {
       this.$store.dispatch('goods/loadCases') 
       this.$store.dispatch('goods/loadServices')   
-      this.$store.dispatch('goods/loadWorks')   
+      this.$store.dispatch('goods/loadWorks') 
+       this.$store.dispatch('goods/loadTeam')   
     },
    computed: {
       ...mapState('goods', ['preload']),

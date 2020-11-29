@@ -42,13 +42,13 @@
 					<div class="col-lg-12">
 						<div class="social-btns">
 							<a href="">
-								<img src="../assets/img/inst.svg" alt="">Youtube
+								<img src="../assets/img/inst.svg" alt="">Instagram
 							</a>
 							<a href="">
-								<img src="../assets/img/youtube.svg" alt="">Instagram
+								<img src="../assets/img/youtube.svg" alt="">LinkedIn
 							</a>
 							<a href="">
-								<img src="../assets/img/vimeo.svg" alt="">Vimeo
+								<img src="../assets/img/vimeo.svg" alt="">Facebook
 							</a>
 						</div>
 					</div>

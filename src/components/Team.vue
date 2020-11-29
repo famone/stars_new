@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="col-lg-12 wow fadeInUp">
 				<h2>Our Team</h2>
-				<p class="teamsub black-txt">WE INSPIRE OURSELVES ALWAYS. THIS IS THR MAIN SECRET OF SECCESS!</p>
+				<p class="teamsub black-txt">Meet the “STARS” </p>
 			</div>
 			<div class="col-lg-4 wow fedeInUp">
 				<div class="team-member text-center">

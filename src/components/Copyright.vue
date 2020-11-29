@@ -2,8 +2,8 @@
 	<section id="copyright">
 		<div class="container">
 			<div class="footer-shapka">
-				<div class="webink">
-						<a href="https://webink.site/">Developed by - Webink. 2020</a>
+				<div class="backToTop">
+						Stars Media
 				</div>
 				<div class="backToTop" @click="backToTop()">
 					Back to top

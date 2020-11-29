@@ -12,7 +12,7 @@
 						<a href="">
 							<img src="../assets/img/youtube_w.svg" v-if="this.$route.path === '/cases' || this.$route.path === '/about' || this.$route.path === '/works' ">
 							<img src="../assets/img/youtube.svg" v-else>
-							Youtube
+							LinkedIn
 						</a>
 						<a href="">
 							<img src="../assets/img/inst_w.svg" v-if="this.$route.path === '/cases' || this.$route.path === '/about' || this.$route.path === '/works' ">
@@ -58,7 +58,7 @@ src="../assets/img/sliderarr.svg" style="transform: rotate(180deg)!important;"><
 				<div class="col-lg-12">
 					<div class="social">
 						<a href=""><img src="../assets/img/inst.svg" alt="">Youtube</a>
-						<a href=""><img src="../assets/img/youtube.svg" alt="">Instagram</a>
+						<a href=""><img src="../assets/img/youtube.svg" alt="">LinkedIn</a>
 					</div>
 				</div>
 			</div>
