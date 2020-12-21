@@ -10,7 +10,7 @@
 			    
 			</div>
 			<div class="col-lg-6">
-				<iframe id="videoPresa" class="wow fadeInUp" src="https://player.vimeo.com/video/81699069?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+				<video src="http://stars-media.cz/wp-content/uploads/2020/12/stars-showreel-3.mp4" autoplay="true" loop="loop" playsinline="playsinline" muted="muted" controls="true" class="video__player"></video>
 			</div>
 			<div class="col-lg-6">
 				<h2 class=" fadeInUp" style="color: #111029;margin-bottom: 30px;line-height: 90%;">
@@ -35,6 +35,9 @@
 	.subtitle{
 		display: flex;
 		justify-content: flex-end;
+	}
+	.video__player{
+		width: 100%;
 	}
 </style>
 
